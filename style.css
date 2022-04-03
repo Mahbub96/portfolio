@@ -1,0 +1,74 @@
+:root {
+  --main: #e0e2e5;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul > li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: var(--main);
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: " b b . m m m m m m  m . t t";
+  padding: 15px 0px;
+  position: fixed;
+  width: 100%;
+}
+.brand {
+  grid-area: b;
+  margin-left: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.theme_button {
+  grid-area: t;
+}
+
+.menu_items {
+  grid-area: m;
+}
+
+.menu_items ul {
+}
+
+.menu_items ul > li {
+  float: left;
+}
+
+.menu_items ul li a {
+  color: black;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.menu_items ul li a:hover {
+  color: blueviolet;
+  border-bottom: 1px solid blue;
+  transition: 1s;
+}
+.identity {
+  display: block;
+}
+.identity .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
