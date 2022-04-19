@@ -8,6 +8,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.6);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
 .cont {
   background-color: #fff;
   margin-top: 80px;
@@ -59,7 +68,24 @@ div span i.social-icon:hover {
   font-family: "Times New Roman", Times, serif;
   color: rgba(0, 0, 0, 0.5);
   margin-top: 60px;
+  letter-spacing: 5px;
 }
-.card img {
-  height: 150px;
+
+.skills .cards .card {
+  height: 160px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 30px #999;
+}
+
+.skills .cards .card .card-img-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.skills .cards .card img {
+  height: 70px;
+  width: 70px;
 }
