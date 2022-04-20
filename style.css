@@ -6,7 +6,13 @@
   margin: 0;
   padding: 0;
 }
-
+i {
+  cursor: pointer;
+}
+i:hover {
+  color: var(--blue);
+  transition: ease-in-out all 0.5s;
+}
 body {
   background-color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
@@ -53,27 +59,28 @@ nav ul li.nav-item a:hover {
 div span i.social-icon {
   background-color: white;
   padding: 5px;
-  color: var(--blue) violet;
+  color: var(--blue);
   font-size: 25px;
   border-radius: 100%;
   width: 40px;
-  border: 1px solid var(--blue) violet;
+  border: 1px solid var(--blue);
   cursor: pointer;
   text-align: center;
 }
 div span i.social-icon:hover {
-  background-color: var(--blue) violet;
+  background-color: var(--blue);
   color: white;
   transition: ease-in-out all 0dddfe0;
 }
 
-.skills .header,
+.skills .header h2,
 .experience .header h2,
 .education .header h2,
-.contract h2 {
+.contract h2,
+.project .header h2 {
   display: block;
   text-align: center;
-  font-size: 40px;
+  font-size: 36px;
   background-color: var(--white);
   font-family: "Times New Roman", Times, serif;
   color: rgba(0, 0, 0, 0.5);
@@ -106,12 +113,14 @@ div span i.social-icon:hover {
 
 /*experience*/
 .experience,
-.education {
+.education,
+.project {
   text-align: center;
 }
 .experience .content,
 .education .content,
-.contract .content {
+.contract .content,
+.project .content {
   box-shadow: 3px 3px 30px #999;
   text-align: left;
 }
@@ -193,6 +202,29 @@ div span i.social-icon:hover {
   .education .content .right::after {
     content: none;
   }
+}
+
+/*project */
+.project .menus {
+  list-style-type: none;
+}
+
+.project .menus a {
+  text-decoration: none;
+  color: #666;
+  padding: 5px 8px;
+  text-align: center;
+  font-size: small;
+  border-right: 1px solid rgba(102, 102, 102, 0.322);
+}
+.project .menus a:last-child {
+  border: none;
+}
+
+.project .project_cards .project_card {
+  width: 300px;
+  height: 350px;
+  background-color: #fff;
 }
 
 .contract h2 {
