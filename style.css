@@ -1,10 +1,14 @@
+:root {
+  --blue: #1e90ff;
+  --white: #dddfe0;
+}
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #dddfe0;
+  background-color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -16,6 +20,9 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
+}
+.right {
+  text-align: right;
 }
 .cont {
   background-color: #fff;
@@ -30,14 +37,14 @@ nav ul li.nav-item a {
 }
 
 nav ul li.nav-item a:hover {
-  border-bottom: 1px solid blue;
-  color: blue !important;
+  border-bottom: 1px solid var(--blue);
+  color: var(--blue) !important;
 }
 
 .profile {
   height: 170px;
   width: 170px;
-  border: 3px solid blue;
+  border: 3px solid var(--blue);
   margin-top: -40px;
 }
 .my-card {
@@ -46,25 +53,27 @@ nav ul li.nav-item a:hover {
 div span i.social-icon {
   background-color: white;
   padding: 5px;
-  color: blueviolet;
+  color: var(--blue) violet;
   font-size: 25px;
   border-radius: 100%;
   width: 40px;
-  border: 1px solid blueviolet;
+  border: 1px solid var(--blue) violet;
   cursor: pointer;
   text-align: center;
 }
 div span i.social-icon:hover {
-  background-color: blueviolet;
+  background-color: var(--blue) violet;
   color: white;
-  transition: ease-in-out all 0.5s;
+  transition: ease-in-out all 0dddfe0;
 }
 
-.skills .header {
+.skills .header,
+.experience .header h2,
+.education .header h2 {
   display: block;
   text-align: center;
   font-size: 40px;
-  background-color: #dddfe0;
+  background-color: var(--white);
   font-family: "Times New Roman", Times, serif;
   color: rgba(0, 0, 0, 0.5);
   margin-top: 60px;
@@ -88,4 +97,84 @@ div span i.social-icon:hover {
 .skills .cards .card img {
   height: 70px;
   width: 70px;
+}
+
+.skills .cards .card .card-text {
+  text-transform: capitalize;
+}
+
+/*experience*/
+.experience,
+.education {
+  text-align: center;
+}
+.experience .content,
+.education .content {
+  box-shadow: 3px 3px 30px #999;
+  text-align: left;
+}
+.experience .content .conts,
+.education .content .conts {
+  padding: 50px 0;
+  padding-left: 30px;
+  border-left: 1px solid rgba(30, 144, 255, 0.2);
+  margin-top: 0px !important;
+  position: relative;
+}
+
+.experience .content .right::before,
+.education .content .right::before {
+  content: " ";
+  color: rgba(30, 144, 255, 0.2);
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+
+  position: absolute;
+  top: -5px;
+  right: -7px;
+}
+.experience .content .right::after,
+.education .content .right::after {
+  content: " ";
+  color: rgba(30, 144, 255, 0.2);
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: -5px;
+  right: -7px;
+}
+.experience .content .right,
+.education .content .right {
+  padding: none;
+  border: none;
+  padding-right: 50px;
+  border-right: 1px solid rgba(30, 144, 255, 0.2);
+}
+.experience .content .conts .times {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+.experience .content .conts h4,
+.education .content .conts h4,
+.education .content .conts h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
+}
+.education .content .conts h5 {
+  font-size: 14px;
+}
+.education .content .conts p {
+  margin: 1px;
 }
