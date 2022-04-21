@@ -227,6 +227,15 @@ div span i.social-icon:hover {
   background-color: #fff;
 }
 
+@media (max-width: 576px) {
+  .project .cards .card {
+    width: 95% !important;
+  }
+  .project .cards .card img {
+    height: 14rem !important;
+  }
+}
+
 .contract h2 {
   font-size: 30px;
   background-color: #fff;
