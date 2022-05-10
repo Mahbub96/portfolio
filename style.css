@@ -120,7 +120,8 @@ div span i.social-icon:hover {
 .experience .content,
 .education .content,
 .contract .content,
-.project .content {
+.project .content,
+.project .cards .card {
   box-shadow: 3px 3px 30px #999;
   text-align: left;
 }
@@ -221,10 +222,8 @@ div span i.social-icon:hover {
   border: none;
 }
 
-.project .project_cards .project_card {
-  width: 300px;
-  height: 350px;
-  background-color: #fff;
+.project .card {
+  box-shadow: 3px 3px 30px #ddd;
 }
 
 @media (max-width: 576px) {
