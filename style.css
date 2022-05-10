@@ -240,8 +240,6 @@ div span i.social-icon:hover {
   background-color: #fff;
 }
 
-footer .social_icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+footer a i {
+  color: #666;
 }
