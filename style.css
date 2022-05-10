@@ -76,8 +76,8 @@ div span i.social-icon:hover {
 .skills .header h2,
 .experience .header h2,
 .education .header h2,
-.contract h2,
-.project .header h2 {
+.project .header h2,
+.contract h2 {
   display: block;
   text-align: center;
   font-size: 36px;
